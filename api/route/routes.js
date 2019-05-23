@@ -4,5 +4,7 @@ module.exports = function(app) {
 
   app.route('/mock')
     .get(controller.mock);
-
+  
+  app.route('/mock/timeout')
+    .get(controller.mockTimeOut);
 };

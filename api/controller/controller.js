@@ -14,3 +14,18 @@ exports.mockTimeOut= function(req,res){
             .json(mock) 
         },6000)
 };
+
+exports.jsonFile= function(req,res){
+    const fs = require('fs');
+    let objJson= {
+        "id":1,
+        "name":"bryan"
+    }
+
+    let data = JSON.stringify(objJson);
+    fs.writeFileSync('data.json', data);
+
+    res.status(200)
+    .json("OK");
+
+}

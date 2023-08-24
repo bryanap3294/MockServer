@@ -7,4 +7,7 @@ module.exports = function(app) {
   
   app.route('/mock/timeout')
     .get(controller.mockTimeOut);
+
+  app.route('/mock/generateJson')
+    .get(controller.jsonFile);
 };

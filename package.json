@@ -10,7 +10,7 @@
   "author": "bryan aguilar",
   "license": "ISC",
   "dependencies": {
-    "express": "4.15.4"
+    "express": "4.19.2"
   },
   "devDependencies": {
     "nodemon": "1.19.0"
